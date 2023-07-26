@@ -2,7 +2,7 @@ const express = require('express');
 
 const Pizza = require('./models/pizzaModel')
 
-const db = require("./db")
+const db = require("./db.js")
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use('/api/orders/',ordersRoute)
 
 // Create a route that responds with "Hello World!"
 app.get('/', (req, res) => {
-  res.send('Hello World!'+port);
+  res.send('Hello World!'+port); 
 });
 
 

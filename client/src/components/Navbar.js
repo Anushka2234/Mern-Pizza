@@ -40,7 +40,7 @@ export default function Navbar() {
                {currentUser.name}
              </Dropdown.Toggle>
              <Dropdown.Menu>
-               <Dropdown.Item href="#">Orders</Dropdown.Item>
+               <Dropdown.Item href="/orders">Orders</Dropdown.Item>
                <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
              </Dropdown.Menu>
            </Dropdown>
